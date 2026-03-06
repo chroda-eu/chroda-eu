@@ -289,6 +289,7 @@ body {
   color: #ffffff;
 }
 
+/* ── Mobile (< 920px) ──────────────────────────────────── */
 @media (max-width: 919px) {
   body {
     flex-direction: column;
@@ -297,47 +298,52 @@ body {
   .sidebar {
     position: sticky;
     top: 0;
-    left: auto;
-    right: auto;
     bottom: auto;
     width: 100%;
-    z-index: 800;
     height: auto;
-    padding: 16px 20px;
+    padding: 12px 20px;
     text-align: center;
+    z-index: 800;
+    overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.18);
-    overflow: visible;
   }
   .dark-mode .sidebar {
     border-bottom-color: rgba(255, 255, 255, 0.18);
+  }
+  .sidebar h1 {
+    font-size: clamp(1.8rem, 7vw, 5rem);
   }
 
   .content {
     margin-left: 0;
     padding: 20px;
-    margin-top: 0;
     width: 100%;
   }
 
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    justify-content: center;
+  /* Single-column fluid grid — overrides all items-* variants */
+  .product-grid,
+  .product-grid.items-2,
+  .product-grid.items-3,
+  .product-grid.items-4,
+  .product-grid.items-5 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .grid-wrapper {
+    max-width: 100%;
+    padding: 0;
   }
   .product-grid .game-container {
     width: 100%;
     max-width: 300px;
-  }
-  .grid-wrapper {
-    max-width: 300px;
-    padding: 0;
+    margin: 0 auto;
   }
   .game-container .link img {
     width: 100%;
-    max-width: 300px;
-    height: 300px;
-    margin: 0 auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: none;
+    margin: 0;
   }
   .game-container .link .title {
     font-size: 0.8em;
@@ -364,6 +370,17 @@ body {
   }
 }
 
+/* ── Small phones (< 480px) ───────────────────────────── */
+@media (max-width: 480px) {
+  .sidebar h1 {
+    font-size: 2rem;
+  }
+  .sidebar p.subtitle {
+    font-size: 0.25rem;
+  }
+}
+
+/* ── Desktop grid breakpoints (≥ 920px only) ──────────── */
 @media (min-width: 1920px) and (max-width: 2299px) {
   .product-grid.items-5 {
     grid-template-columns: repeat(4, 300px);
@@ -375,14 +392,11 @@ body {
     grid-template-columns: repeat(3, 300px);
   }
 }
-@media (max-width: 1599px) {
+@media (min-width: 920px) and (max-width: 1599px) {
   .product-grid.items-3,
   .product-grid.items-4,
   .product-grid.items-5 {
     grid-template-columns: repeat(2, 300px);
-  }
-  .copyright {
-    margin-top: 50px;
   }
 }
 @media (min-width: 920px) and (max-width: 1199px) {
@@ -390,13 +404,5 @@ body {
   .product-grid.items-4,
   .product-grid.items-5 {
     grid-template-columns: repeat(1, 300px);
-  }
-}
-@media (max-width: 480px) {
-  .sidebar h1 {
-    font-size: 2.5em;
-  }
-  .sidebar p.subtitle {
-    font-size: 0.25rem;
   }
 }

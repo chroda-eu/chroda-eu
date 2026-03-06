@@ -149,8 +149,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         const count = franchise.titles.length;
-        const itemsPerRow =
-          count <= 2 ? 2 : count === 3 ? 3 : count <= 4 ? 4 : 3;
+        let itemsPerRow;
+        if (count <= 5) {
+          itemsPerRow = count;
+        } else {
+          const MAX_COLS = 5;
+          let best = 3, bestScore = Infinity;
+          for (let cols = MAX_COLS; cols >= 2; cols--) {
+            const rows = Math.ceil(count / cols);
+            const score = (rows * cols - count) * 100 + rows;
+            if (score < bestScore) { bestScore = score; best = cols; }
+          }
+          itemsPerRow = best;
+        }
         productGrid.classList.add(`items-${itemsPerRow}`);
 
         section.appendChild(productGrid);
