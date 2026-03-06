@@ -3,6 +3,7 @@
   src: url("/fonts/Jazz_Club.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "NotoSansJP-Medium";
@@ -167,9 +168,7 @@ body {
   grid-template-columns: repeat(5, 300px);
 }
 
-.product-grid:has(.game-container:nth-child(2)):not(
-    :has(.game-container:nth-child(3))
-  ) {
+.product-grid.items-2 {
   grid-template-columns: repeat(2, 300px);
   justify-content: center;
 }
@@ -198,7 +197,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0px 15px var(--shadow-color);
+  box-shadow: 0 0 15px var(--shadow-color);
 }
 .game-container:hover img {
   transform: translateY(-5px);
