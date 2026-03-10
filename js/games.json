@@ -3,6 +3,12 @@
     "franchise": "Rooftop Rascal",
     "titles": [
       {
+        "title": "Rooftop Rascal: The Farmer Cat",
+        "url": "https://store.playstation.com/concept/10018954",
+        "image": "images/games/rrtfc.jpg",
+        "announced": true
+      },
+      {
         "title": "Rooftop Rascal: The Pirate Cat",
         "url": "https://store.playstation.com/concept/10018707/",
         "image": "images/games/rrtpc.jpg",
