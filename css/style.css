@@ -21,7 +21,8 @@
 }
 @font-face {
   font-family: "PressStart2P";
-  src: url("/fonts/PressStart2P-Regular.ttf") format("truetype"),
+  src:
+    url("/fonts/PressStart2P-Regular.ttf") format("truetype"),
     url("/fonts/PressStart2P-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -94,6 +95,29 @@ body {
   gap: 5px;
   text-align: right;
   margin-top: auto;
+}
+.sidebar .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.sidebar .social-icons a {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.sidebar .social-icons a:hover {
+  opacity: 1;
+}
+.sidebar .social-icons img {
+  height: 20px;
+  width: auto;
+}
+.svg-white {
+  filter: brightness(0) invert(1);
 }
 
 .content {
@@ -196,12 +220,16 @@ body {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 0 15px var(--shadow-color);
 }
 .game-container:hover img {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px var(--shadow-color), 0 12px 40px var(--shadow-color);
+  box-shadow:
+    0 8px 16px var(--shadow-color),
+    0 12px 40px var(--shadow-color);
 }
 
 .game-container .badge-announced {

@@ -83,19 +83,25 @@ document.addEventListener("DOMContentLoaded", () => {
       const linkedIn = document.querySelector(
         '.contact-info a[href*="linkedin.com"]'
       );
-      if (linkedIn)
-        linkedIn.textContent = t(
-          "contact-info.contactLinkedIn",
-          linkedIn.textContent
-        );
+      if (linkedIn) {
+        const label = t("contact-info.contactLinkedIn", linkedIn.title);
+        linkedIn.title = label;
+        linkedIn.setAttribute("aria-label", label);
+      }
 
       const xLink = document.querySelector('.contact-info a[href*="x.com"]');
-      if (xLink)
-        xLink.textContent = t("contact-info.followX", xLink.textContent);
+      if (xLink) {
+        const label = t("contact-info.followX", xLink.title);
+        xLink.title = label;
+        xLink.setAttribute("aria-label", label);
+      }
 
       const bsky = document.querySelector('.contact-info a[href*="bsky.app"]');
-      if (bsky)
-        bsky.textContent = t("contact-info.followBsky", bsky.textContent);
+      if (bsky) {
+        const label = t("contact-info.followBsky", bsky.title);
+        bsky.title = label;
+        bsky.setAttribute("aria-label", label);
+      }
 
       const basedP = Array.from(
         document.querySelectorAll(".contact-info > p")
@@ -134,8 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
           item.className = "game-container";
 
           const announcedLabel = t("tags.announced", "ANNOUNCED");
-          const badge = game.announced
-            ? `<span class="badge-announced">${announcedLabel}</span>`
+          const launchDate = game.launch_date ? new Date(game.launch_date + "T00:00:00Z") : null;
+          const isAnnounced = launchDate ? new Date() < launchDate : false;
+          const launchTooltip = launchDate
+            ? launchDate.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" }) + " 00:00 UTC"
+            : "";
+          const badge = isAnnounced
+            ? `<span class="badge-announced" title="${launchTooltip}">${announcedLabel}</span>`
             : "";
 
           item.innerHTML = `

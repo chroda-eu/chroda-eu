@@ -6,13 +6,12 @@
         "title": "Rooftop Rascal: The Farmer Cat",
         "url": "https://store.playstation.com/concept/10018954",
         "image": "images/games/rrtfc.jpg",
-        "announced": true
+        "launch_date": "2026-03-26"
       },
       {
         "title": "Rooftop Rascal: The Pirate Cat",
         "url": "https://store.playstation.com/concept/10018707/",
-        "image": "images/games/rrtpc.jpg",
-        "announced": false
+        "image": "images/games/rrtpc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Alien Cat",
