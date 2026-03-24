@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
           item.className = "game-container";
 
           const announcedLabel = t("tags.announced", "ANNOUNCED");
-          const launchDate = game.launch_date ? new Date(game.launch_date + "T00:00:00Z") : null;
+          const launchDate = game.launch_date ? new Date(game.launch_date) : null;
           const isAnnounced = launchDate ? new Date() < launchDate : false;
           const launchTooltip = launchDate
             ? launchDate.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" }) + " 00:00 UTC"
