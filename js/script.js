@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : "";
 
           item.innerHTML = `
-            <a class="link" href="${game.url}" target="_blank" rel="noopener" title="${gTitle}">
+            <a class="link" href="https://store.playstation.com/concept/${game.concept}/" target="_blank" rel="noopener" title="${gTitle}">
               <h3 class="title">${gTitle}</h3>
               <img src="${imgSrc}" alt="${gTitle}" loading="lazy" decoding="async">
               ${badge}

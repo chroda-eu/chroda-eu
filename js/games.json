@@ -4,7 +4,7 @@
     "titles": [
       {
         "title": "Duel Draw: Katana Clash",
-        "url": "https://store.playstation.com/concept/10019102/",
+        "concept": "10019102",
         "image": "images/games/ddkc.jpg",
         "launch_date": "2026-05-12T00:00:00Z"
       }
@@ -15,50 +15,50 @@
     "titles": [
       {
         "title": "Rooftop Rascal: The Farmer Cat",
-        "url": "https://store.playstation.com/concept/10018954",
+        "concept": "10018954",
         "image": "images/games/rrtfc.jpg",
         "launch_date": "2026-03-26T00:00:00Z"
       },
       {
         "title": "Rooftop Rascal: The Pirate Cat",
-        "url": "https://store.playstation.com/concept/10018707/",
+        "concept": "10018707",
         "image": "images/games/rrtpc.jpg",
         "launch_date": "2026-03-08T00:00:00Z"
       },
       {
         "title": "Rooftop Rascal: The Alien Cat",
-        "url": "https://store.playstation.com/concept/10018302/",
+        "concept": "10018302",
         "image": "images/games/rrtalc.jpg",
         "launch_date": "2026-02-16T00:00:00Z"
       },
       {
         "title": "Rooftop Rascal: The Claus Cat",
-        "url": "https://store.playstation.com/concept/10013572/",
+        "concept": "10013572",
         "image": "images/games/rrtcc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Glitch Cat",
-        "url": "https://store.playstation.com/concept/10013217/",
+        "concept": "10013217",
         "image": "images/games/rrtgc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Spooky Cat",
-        "url": "https://store.playstation.com/concept/10012846",
+        "concept": "10012846",
         "image": "images/games/rrtsc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Drizzle Cat",
-        "url": "https://store.playstation.com/concept/10012305/",
+        "concept": "10012305",
         "image": "images/games/rrtdc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Midnight Cat",
-        "url": "https://store.playstation.com/concept/10011776/",
+        "concept": "10011776",
         "image": "images/games/rrtmc.jpg"
       },
       {
         "title": "Rooftop Rascal: The Alley Cat",
-        "url": "https://store.playstation.com/concept/10010724/",
+        "concept": "10010724",
         "image": "images/games/rrtac.jpg"
       }
     ]
@@ -68,19 +68,19 @@
     "titles": [
       {
         "title": "Orchard Odyssey: Chestnut Christmas",
-        "url": "https://store.playstation.com/concept/10017623/",
+        "concept": "10017623",
         "image": "images/games/oocx_en.jpg",
         "image_ja": "images/games/oocx_ja.jpg"
       },
       {
         "title": "Orchard Odyssey: Pumpkin Party",
-        "url": "https://store.playstation.com/concept/10017300/",
+        "concept": "10017300",
         "image": "images/games/oopp_en.jpg",
         "image_ja": "images/games/oopp_ja.jpg"
       },
       {
         "title": "Orchard Odyssey: Cherry Chase",
-        "url": "https://store.playstation.com/concept/10016203/",
+        "concept": "10016203",
         "image": "images/games/oocc_en.jpg",
         "image_ja": "images/games/oocc_ja.jpg"
       }
