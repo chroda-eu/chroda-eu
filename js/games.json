@@ -1,5 +1,16 @@
 [
   {
+    "franchise": "Mash Motion",
+    "titles": [
+      {
+        "title": "Mash Motion: Sprint Rush",
+        "concept": "10019314",
+        "image": "images/games/mmsr.jpg",
+        "launch_date": "2026-04-17T00:00:00Z"
+      }
+    ]
+  },
+  {
     "franchise": "Duel Draw",
     "titles": [
       {
