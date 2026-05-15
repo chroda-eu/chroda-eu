@@ -3,6 +3,12 @@
     "franchise": "Mash Motion",
     "titles": [
       {
+        "title": "Mash Motion: Swimming Surge",
+        "concept": "10019686",
+        "image": "images/games/mmss.jpg",
+        "launch_date": "2026-06-01T00:00:00Z"
+      },
+      {
         "title": "Mash Motion: Sprint Rush",
         "concept": "10019314",
         "image": "images/games/mmsr.jpg",
